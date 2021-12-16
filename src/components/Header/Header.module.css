@@ -1,0 +1,23 @@
+
+/*home__theme */
+header {
+  height: 230px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+  
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.56),
+    rgba(0, 0, 0, 0.56)
+  ),
+  url(../../img/header/desctop/desctop@2x.jpg);
+
+}
+
+.header__container {
+  margin: 0 auto;
+  padding: 41px 71px 65px 71px;
+}
+
+

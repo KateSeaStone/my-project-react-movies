@@ -1,30 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './ImageGalleryItem.scss';
-
+import img1 from '../../img/card1.png';
 
 const ImageGalleryItem = (props) => {
-  const { id, original, preview, showModal } = props;
+  //const {  url } = props;
   return (
-    <li
-      key={id}
-      className="ImageGalleryItem">
-      <img
-        src={preview}
-        alt={preview}
-        className="ImageGalleryItem-image"
-        onClick={() => showModal(original)} />
+    <li className="ImageGalleryItem">
+      <img src={img1} alt="" />
+      <h3>GREYHOUND</h3>
+      <div>Drama, Action | 2020</div>
     </li>
   )
 
 }
 
-ImageGalleryItem.propTypes = {
-  id: PropTypes.string.isRequired,
-  webformatURL: PropTypes.string,
-  largeImageURL: PropTypes.string,
-  showModal: PropTypes.func.isRequired,
-};
+// ImageGalleryItem.propTypes = {
+//   id: PropTypes.string.isRequired,
+//   webformatURL: PropTypes.string,
+//   largeImageURL: PropTypes.string,
+//   showModal: PropTypes.func.isRequired,
+// };
 
 
 export default ImageGalleryItem;

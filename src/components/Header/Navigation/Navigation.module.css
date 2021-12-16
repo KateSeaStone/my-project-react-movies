@@ -1,0 +1,14 @@
+/*стили для навигации*/
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.nav__list {
+  display: flex;
+}
+
+
+

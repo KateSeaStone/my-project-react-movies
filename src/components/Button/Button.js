@@ -1,14 +1,14 @@
-import './Button.scss';
+import s from './Button.module.css';
 import PropTypes from 'prop-types';
 
 const Button = (props) => {
-  const { handleClick } = props;
+  const { handleClick, title } = props;
   return (
     <button
-      className="loadMoreBtn"
+      className={s.button}
       type="button"
       onClick={handleClick}
-    >Load more</button>
+    >{title}</button>
   )
 };
 
